@@ -25,3 +25,7 @@ RUN printf '%s\n' 'export GOPATH=/workspace/go' \
 RUN sudo apt update && sudo apt install -y universal-ctags tree nkf wamerican miller tcpdump
 RUN wget -O /tmp/hyperfine.deb https://github.com/sharkdp/hyperfine/releases/download/v1.19.0/hyperfine_1.19.0_amd64.deb
 RUN sudo dpkg -i /tmp/hyperfine.deb
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sudo sh -s -- -y
+RUN source /home/gitpod/.cargo/env
+RUN rustup default stable
+RUN cargo install tree-sitter-cli
