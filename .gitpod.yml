@@ -9,8 +9,7 @@ tasks:
       go install golang.org/x/tools/cmd/goimports@latest &&
       go install github.com/go-delve/delve/cmd/dlv@latest &&
       go install golang.org/x/perf/cmd/benchstat@latest &&
-      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -o /workspace/try-treesitter/rustup-init.sh &&
-      sudo sh /workspace/try-treesitter/rustup-init.sh -y --default-toolchain stable
+      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -o /workspace/try-treesitter/rustup-init.sh
     command:
       go version
 
