@@ -54,7 +54,7 @@ $ cd ~/tree-sitter-parsers
 $ git clone https://github.com/tree-sitter/tree-sitter-c.git
 ```
 
-```~/.config/tree-sitter/config.json```のparser-directoriesを以下のように設定する。
+```~/.config/tree-sitter/config.json```のparser-directoriesを以下のように設定します。。
 
 ```json
   "parser-directories": [
