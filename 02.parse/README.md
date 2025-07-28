@@ -15,3 +15,14 @@ srcCode, _ := os.ReadFile("/path/to/src/file")
 tree := p.Parse(srcCode, nil)
 defer tree.Close()
 ```
+
+## 実行例
+
+```sh
+$ task
+task: [default] go run .
+(translation_unit (preproc_include path: (system_lib_string)) (preproc_include path: (system_lib_string)) (function_definition type: (primitive_type) declarator: (function_declarator declarator: (identifier) parameters: (parameter_list (parameter_declaration type: (primitive_type)))) body: (compound_statement (declaration type: (primitive_type) declarator: (init_declarator declarator: (pointer_declarator declarator: (identifier)) value: (string_literal (string_content)))) (expression_statement (call_expression function: (identifier) arguments: (argument_list (string_literal (string_content) (escape_sequence)) (identifier)))) (return_statement (identifier)))))
+
+
+Kind: translation_unit, Start: {0 0}, End: {9 1}
+```
