@@ -2,6 +2,22 @@
 
 This is my TUTORIAL project for tree-sitter.
 
+## tree-sitterとは
+
+[tree-sitter-doc](https://tree-sitter.github.io/tree-sitter/)にライブラリの紹介が書いてあります。
+
+> Tree-sitter is a parser generator tool and an incremental parsing library. It can build a concrete syntax tree for a source file and efficiently update the syntax tree as the source file is edited. Tree-sitter aims to be:
+
+> (Tree-sitterは構文解析ツールであり、インクリメンタル構文解析ライブラリである。ソースファイルの具体的な構文ツリーを構築し、ソースファイルの編集に応じて構文ツリーを効率的に更新することができます。Tree-sitterは次のようなことを目指しています：)
+
+> General enough to parse any programming language (あらゆるプログラミング言語を解析できる汎用性)
+
+> Fast enough to parse on every keystroke in a text editor (テキストエディタでのすべてのキーストロークを解析するのに十分な速度)
+
+> Robust enough to provide useful results even in the presence of syntax errors (構文エラーがあっても有用な結果を提供できるほど頑健である。)
+
+> Dependency-free so that the runtime library (which is written in pure C11) can be embedded in any application (依存性がないため、ランタイムライブラリ（純粋なC11で書かれている）をあらゆるアプリケーションに組み込むことができる。)
+
 ## tree-sitterを使ったソースファイルの解析
 
 [tree-sitter](https://github.com/tree-sitter/tree-sitter)は、インクリメンタル（増分）な構文解析が可能なパーサジェネレータ・ライブラリです。
