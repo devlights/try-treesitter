@@ -27,10 +27,11 @@ func run() error {
 		l   *tree_sitter.Language = tree_sitter.NewLanguage(tree_sitter_c.Language())
 		err error
 	)
+	defer p.Close()
+
 	if err = p.SetLanguage(l); err != nil {
 		return err
 	}
-	defer p.Close()
 
 	return nil
 }
