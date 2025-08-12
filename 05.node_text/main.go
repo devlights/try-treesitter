@@ -61,10 +61,10 @@ func run() error {
 	}
 
 	var (
-		tree *tree_sitter.Tree
 		code = []byte(C_CODE)
+		tree = p.Parse(code, nil)
 	)
-	if tree = p.Parse(code, nil); tree == nil {
+	if tree == nil {
 		return errors.New("構文解析に失敗: Parse()")
 	}
 	defer tree.Close()
