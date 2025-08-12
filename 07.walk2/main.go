@@ -66,6 +66,7 @@ func run() error {
 	if tree == nil {
 		return errors.New("構文解析に失敗: Parse()")
 	}
+	defer tree.Close()
 
 	var (
 		root     = tree.RootNode()
